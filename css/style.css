@@ -1,0 +1,142 @@
+:root {
+    --root-color: #307cd5;
+    --dark-color:#14182b;
+
+}
+
+body {
+    background: var(--dark-color) !important;
+    user-select: none;
+}
+
+.logo {
+    font-family: 'Amaranth', sans-serif;
+    color: var(--root-color) !important;
+    font-size: 45px !important;
+    position: relative;
+}
+
+.logo span{
+    font-family: 'Berkshire Swash', cursive;
+    margin-left: -10px;
+}
+
+.ball {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgb(255, 40, 40);
+    position: absolute;
+    right: -10px;
+    top: 65%;
+}
+
+.first {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.text h1 {
+    font-family: 'Berkshire Swash', cursive;
+    position: absolute;
+    top: -70px;
+    font-size: 45px;
+}
+.text p {
+    font-size: 20px;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase ;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #3a3e5296;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.resume:hover {
+    background-color:var(--dark-color) ;
+    color: #fff !important;
+}
+
+.resume img {
+    width: 18px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #3a3e5296;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    border: 1px solid #3a3e5296;
+    border-radius: 15px;
+    padding: 20px;
+    width: 800px !important;
+}
+.items span {
+    width: 2px;
+    height: 40px;
+    background-color: #3a3e5296;
+}
+
+.items li {
+    width: calc(100% / 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items li a {
+    list-style: none;
+    padding: 10px;
+    background-color: #3a3e5296;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+}
+.items li a.active {
+    background-color: var(--root-color);
+    transform: scale(1.2);
+}
+
+.items li a img {
+    width: 35px;
+}
