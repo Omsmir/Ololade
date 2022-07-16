@@ -1,12 +1,25 @@
 :root {
     --root-color: #307cd5;
     --dark-color:#14182b;
+    --gray-color: #3a3e5296;
+    --black-color:#16161a;
+    --light-mode: #f3fbfb;
+    --dark-mode-text:#232946;
+}
 
+.light{
+    background-color: var(--light-mode) !important;
+    color: var(--dark-mode-text) !important;
+}
+.night {
+    background-color: var(--dark-color) !important;
+    color: var(--light-mode) !important;
 }
 
 body {
     background: var(--dark-color) !important;
     user-select: none;
+    transition: 0.3s ease-in-out;
 }
 
 .logo {
@@ -46,6 +59,7 @@ body {
     flex-direction: column;
     padding: 10px;
     padding-top: 0;
+
 }
 
 .text h1 {
@@ -53,10 +67,14 @@ body {
     position: absolute;
     top: -70px;
     font-size: 45px;
+    transition: 0.3s ease-in-out;
+
 }
 .text p {
     font-size: 20px;
     font-family: 'Baloo Da 2', cursive;
+    transition: 0.3s ease-in-out;
+
 }
 
 .resume {
@@ -70,7 +88,7 @@ body {
     padding: 10px;
     padding-left: 18px;
     padding-right: 18px;
-    background-color: #3a3e5296;
+    background-color: var(--gray-color);
     border-radius: 15px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -94,7 +112,7 @@ body {
     padding: 15px;
     padding-left: 35px;
     padding-right: 35px;
-    background-color: #3a3e5296;
+    background-color: var(--gray-color);
     border-radius: 10px;
     cursor: pointer;
     border: none;
@@ -107,28 +125,55 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 15px;
-    border: 1px solid #3a3e5296;
+    border: 1px solid var(--gray-color);
     border-radius: 15px;
     padding: 20px;
     width: 800px !important;
 }
-.items span {
+.items .stick {
     width: 2px;
     height: 40px;
-    background-color: #3a3e5296;
+    background-color: var(--gray-color);
+}
+.items .dark img{
+    width: 35px;
+    height: 35px;
+
+}
+.items .last {
+    width: 89px;
+    height: 55px;
+    
 }
 
 .items li {
-    width: calc(100% / 9);
+    width: calc(100% / 8);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.items .dark
+{
+    width: 55px;
+    height: 55px;
+    background-color: #00000050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition:  0.3s ease-in-out;
+    border-radius: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.items .dark:hover {
+    background-color: var(--black-color);
 }
 
 .items li a {
     list-style: none;
     padding: 10px;
-    background-color: #3a3e5296;
+    background-color: var(--gray-color);
     border-radius: 15px;
     transition: 0.3s ease-in-out;
 }
