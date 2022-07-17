@@ -35,23 +35,23 @@ dark.addEventListener("click",()=>{
             document.body.classList.add("night")
         }
         h1.forEach((ele)=>{
-            if(ele.classList.contains("night")){
-                ele.classList.remove("night")
+            if(ele.classList.contains("night-2")){
+                ele.classList.remove("night-2")
 
             }else {
                 ele.classList.remove("light")
-                ele.classList.add("night")
+                ele.classList.add("night-2")
 
             }
         })
 
         p.forEach((ele)=>{
-            if(ele.classList.contains("night")){
-                ele.classList.remove("night")
+            if(ele.classList.contains("night-2")){
+                ele.classList.remove("night-2")
 
             }else {
                 ele.classList.remove("light")
-                ele.classList.add("night")
+                ele.classList.add("night-2")
 
             }
         })

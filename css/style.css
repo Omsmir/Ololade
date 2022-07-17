@@ -7,6 +7,10 @@
     --dark-mode-text:#232946;
 }
 
+.night-2 {
+    color: var(--light-mode) !important;
+}
+
 .light{
     background-color: var(--light-mode) !important;
     color: var(--dark-mode-text) !important;
