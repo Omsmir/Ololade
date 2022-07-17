@@ -7,8 +7,10 @@
     <title>Cv</title>
     <link rel="icon" href="imgs/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@700&display=swap" rel="stylesheet"> 
@@ -16,11 +18,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet"> 
 </head>
-<body >
+<body class="night">
     <nav class="navbar navbar-expand-lg sticky-top ">
         <div class="container-fluid">
-          <a class="navbar-brand ms-5 logo" href="javascript:void(0)">Ololad <span>e</span> <div class="ball"></div></a>
-         <a class="resume me-5 " href="/omar.pdf" download>
+          <a class="navbar-brand logo" href="javascript:void(0)" data-aos="zoom-in" data-aos-delay="150"  data-aos-duration="600">Ololad <span>e</span> <div class="ball"></div></a>
+         <a class="bttn resume me-5 " href="/omar.pdf" download>
             resume 
             <img src="imgs/download.png" class="img-fluid ms-2" alt="">
          </a>
@@ -29,25 +31,35 @@
       </nav>
       <div class="container">
 <div class="col first">
-    <div class="col-lg-4 ">
+    <div class="cul ">
         <img src="imgs/Achievement _Flatline.png" class="img-fluid" alt="">
     </div>
     <div class="text">
-        <h1 class="night"> Epp me! Epp me!</h1>
-        <p class="night text-capitalize">this portfolio dey carry me go where i no know</p>
+        <h1 class="night epp" data-aos="fade-down" data-aos-delay="150"  data-aos-duration="600"> Epp me! Epp me!</h1>
+        <p class="night text-capitalize para" data-aos="fade-up" data-aos-delay="150"  data-aos-duration="600">this portfolio dey carry me go where i no know</p>
     </div>
-    <button class="button ">Go Home</button>
+    <button class="bttn button">Go Home</button>
 </div>
-<div class="row text-center flex justify-content-center mt-3">
-    <ul class="items">
-        <li><a href="javascript:void(0)"><img src="imgs/home.png" class="img-fluid" alt=""></a></li>
-        <li><a href="javascript:void(0)" class="active"><img src="imgs/lightbulb.png" class="img-fluid" alt=""></a></li>
-        <li><a href="javascript:void(0)"><img src="imgs/user.png" class="img-fluid" alt=""></a></li>
-        <li><a href="javascript:void(0)"><img src="imgs/mail.png" class="img-fluid" alt=""></a></li>
-        <li><a href="javascript:void(0)"><img src="imgs/calendar.png" class="img-fluid" alt=""></a></li>
-        <li><a href="javascript:void(0)"><img src="imgs/twitter.png" class="img-fluid" alt=""></a></li>
-        <li><a href="javascript:void(0)"><img src="imgs/behance.png" class="img-fluid" alt=""></a></li>
-        <li><a href="javascript:void(0)"><img src="imgs/basketball-ball.png" class="img-fluid" alt=""></a></li>
+<div class="row item text-center flex justify-content-center mt-3" >
+    <ul class="items" >
+        <div class="cul" >
+            <li><a href="javascript:void(0)"><img src="imgs/home.png" class="img-fluid" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img src="imgs/user.png" class="img-fluid" alt=""></a></li>
+        </div>
+        <div class="cul">
+            <li><a href="javascript:void(0)" class="active"><img src="imgs/lightbulb.png" class="img-fluid" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img src="imgs/calendar.png" class="img-fluid" alt=""></a></li>
+        </div>
+<div class="cul">
+    <li><a href="javascript:void(0)"><img src="imgs/mail.png" class="img-fluid" alt=""></a></li>
+    <li><a href="javascript:void(0)"><img src="imgs/behance.png" class="img-fluid" alt=""></a></li>
+
+</div>
+<div class="cul">
+    <li><a href="javascript:void(0)"><img src="imgs/twitter.png" class="img-fluid" alt=""></a></li>
+    <li><a href="omar.pdf" download><img src="imgs/basketball-ball.png" class="img-fluid" alt=""></a></li>
+
+</div>
         <span class="stick"></span>
         <div class="last">
             <span class="dark"><img src="imgs/night-mode.png" class="img-fluid" alt=""></span>
@@ -56,6 +68,11 @@
     </ul>
 </div>
       </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script>
+        AOS.init();
+      </script>
       <script src="js/index.js"></script>
       <script src="js/all.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>

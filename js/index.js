@@ -25,14 +25,15 @@ let btn = document.querySelectorAll(".button")
 
 dark.addEventListener("click",()=>{
     if(dark.classList.contains("dark")){
-        li.forEach((ele)=>{
-            if(ele.classList.contains("active")){
-                return true
-            }else{
-                ele.classList.add("night")
-            }       
-        })
-        document.body.classList.add("light")
+       
+        if(document.body.classList.contains("night")){
+            document.body.classList.remove("night")
+            document.body.classList.add("light")
+
+        }else {
+            document.body.classList.remove("light")
+            document.body.classList.add("night")
+        }
         h1.forEach((ele)=>{
             if(ele.classList.contains("night")){
                 ele.classList.remove("night")
@@ -45,7 +46,14 @@ dark.addEventListener("click",()=>{
         })
 
         p.forEach((ele)=>{
-            ele.classList.add("light")
+            if(ele.classList.contains("night")){
+                ele.classList.remove("night")
+
+            }else {
+                ele.classList.remove("light")
+                ele.classList.add("night")
+
+            }
         })
         
     }else {

@@ -27,6 +27,7 @@ body {
     color: var(--root-color) !important;
     font-size: 45px !important;
     position: relative;
+    margin-left: 3rem;
 }
 
 .logo span{
@@ -119,6 +120,12 @@ body {
     font-weight: bold;
 }
 
+.row.item {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}
+
 .items {
     display: flex;
     flex-direction: row;
@@ -129,6 +136,14 @@ body {
     border-radius: 15px;
     padding: 20px;
     width: 800px !important;
+}
+.items .cul {
+    width: calc(100% / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
 }
 .items .stick {
     width: 2px;
@@ -147,10 +162,11 @@ body {
 }
 
 .items li {
-    width: calc(100% / 8);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
+
 }
 .items .dark
 {
